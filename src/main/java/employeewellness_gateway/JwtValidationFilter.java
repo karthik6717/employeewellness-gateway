@@ -21,7 +21,7 @@ public class JwtValidationFilter extends AbstractGatewayFilterFactory<JwtValidat
 
     public JwtValidationFilter(WebClient.Builder webClientBuilder) {
         super(Config.class);
-        this.webClient = webClientBuilder.baseUrl("http://localhost:9091/api/auth").build();
+        this.webClient = webClientBuilder.baseUrl("http://localhost:9092/api/auth").build();
     }
     @Override
     public GatewayFilter apply(Config config) {
